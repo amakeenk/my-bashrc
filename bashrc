@@ -65,3 +65,16 @@ cp-p() {
 
 export -f cp-p
 # -----------------------------------------------------
+# -----------------------------------------------------
+# Different options
+# -----------------------------------------------------
+shopt -s histappend
+PROMPT_COMMAND='history -a'
+export HISTCONTROL="ignoredups"
+
+shopt -s cdspell
+
+shopt -s cmdhist
+
+
+# -----------------------------------------------------
