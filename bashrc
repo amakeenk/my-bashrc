@@ -56,5 +56,9 @@ shopt -s cmdhist
 # Aliases
 # -----------------------------------------------------
 alias ll='ls -l'
+alias u='sudo apt-get update'
+alias ud='u && sudo apt-get dist-upgrade'
+alias udk='ud && sudo update-kernel'
+alias udkc='sudo apt-repo clean && udk'
+alias adt='sudo apt-repo add $1'
 # -----------------------------------------------------
-
