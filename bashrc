@@ -61,6 +61,6 @@ alias ud='u && sudo apt-get dist-upgrade'
 alias udk='ud && sudo update-kernel'
 alias udkc='sudo apt-repo clean && udk'
 alias adt='sudo apt-repo add'
-alias agip='sudo apt-get install'
+alias agip='u && sudo apt-get install'
 alias agrp='sudo apt-get remove'
 # -----------------------------------------------------
