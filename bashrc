@@ -63,4 +63,6 @@ alias udkc='sudo apt-repo clean && udk'
 alias adt='sudo apt-repo add'
 alias agip='u && sudo apt-get install'
 alias agrp='sudo apt-get remove'
+alias acs='apt-cache search'
+alias acwd='apt-cache whatdepends'
 # -----------------------------------------------------
