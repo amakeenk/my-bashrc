@@ -1,9 +1,5 @@
 # .bashrc
 # -----------------------------------------------------
-if [ -r /etc/bashrc ]; then
-	. /etc/bashrc
-fi
-# -----------------------------------------------------
 # -----------------------------------------------------
 # Autoadded ssh key
 # -----------------------------------------------------
@@ -52,6 +48,8 @@ export HISTCONTROL="ignoredups"
 shopt -s cdspell
 shopt -s cmdhist
 # -----------------------------------------------------
+[ -r /etc/bashrc ] && . /etc/bashrc
+[ -r /etc/bashrc.d/bash_prompt.sh ] && . /etc/bashrc.d/bash_prompt.sh
 # -----------------------------------------------------
 # Aliases
 # -----------------------------------------------------
@@ -65,4 +63,8 @@ alias agip='u && sudo apt-get install'
 alias agrp='sudo apt-get remove'
 alias acs='apt-cache search'
 alias acwd='apt-cache whatdepends'
+alias sstat='systemctl status'
+alias sstart='sudo systemctl start'
+alias sstop='sudo systemctl stop'
+alias ssres='sudo systemctl restart'
 # -----------------------------------------------------
