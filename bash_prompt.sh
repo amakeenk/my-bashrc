@@ -93,7 +93,7 @@ function prompt_command {
 		[[ ! -z $VIRTUAL_ENV ]] && PS1_VENV=" (venv: ${color_blue}${VIRTUAL_ENV#$WORKON_HOME}${color_off})"
 	fi
 
-	PS1="${color_magenta}\t${color_off} ${color_user}${USER}${color_off}@${color_white}${HOSTNAME}:${PWDNAME}${color_off}${PS1_GIT}${PS1_VENV} ${char_user} "
+	PS1="${color_magenta}\t${color_off} ${color_user}${USER}${color_off}@${color_white}${HOSTNAME}: ${PWDNAME}${color_off}${PS1_GIT}${PS1_VENV} ${char_user} "
 
 	# get cursor position and add new line if we're not in first column
 	echo -en "\033[6n" && read -sdR CURPOS
