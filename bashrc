@@ -69,4 +69,8 @@ alias sstat='systemctl status'
 alias sstart='sudo systemctl start'
 alias sstop='sudo systemctl stop'
 alias ssres='sudo systemctl restart'
+alias du1='du -d1'
+alias code='code .'
+alias dolphin='dolphin .'
+alias svim='sudo vim'
 # -----------------------------------------------------
